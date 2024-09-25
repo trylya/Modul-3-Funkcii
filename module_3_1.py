@@ -8,10 +8,10 @@ def string_info(string):
 def is_contains(string, list_to_search):
     count_calls()
     for i in list_to_search:
-        if string.lower() == str(i.lower()):
+        if i.lower()==string.lower():
          return True
-        else:
-         return False
+        break
+    return False
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
 print(is_contains('Urban', ['ban', 'BaNaN'])) #Urban~urBan
