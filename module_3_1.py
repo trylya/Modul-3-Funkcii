@@ -10,7 +10,6 @@ def is_contains(string, list_to_search):
     for i in list_to_search:
         if i.lower()==string.lower():
          return True
-        break
     return False
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
