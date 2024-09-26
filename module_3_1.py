@@ -10,7 +10,8 @@ def is_contains(string, list_to_search):
     for i in list_to_search:
         if i.lower() in  string:
          return True
-    return False
+        if i.lower() in list_to_search:
+         return False
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
 print(is_contains('Urban', ['ban', 'BaNaN'])) #Urban~urBan
